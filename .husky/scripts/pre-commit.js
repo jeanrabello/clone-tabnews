@@ -107,6 +107,7 @@ async function runSecretCheck() {
 
     console.clear();
     console.log(chalk.green("✅ No secrets confirmed. Commit allowed."));
+    process.exit(0);
   } catch (err) {
     console.error(chalk.red("❌ Error during verification:"), err.message);
     process.exit(1);

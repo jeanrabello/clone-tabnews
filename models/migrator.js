@@ -40,7 +40,6 @@ async function runPendingMigrations() {
   }
 }
 
-
 const migrator = {
   listPendingMigrations,
   runPendingMigrations,
